@@ -1,4 +1,11 @@
 {
+  "redirects": [
+    { "source": "/Blogpage", "destination": "/blog", "permanent": true },
+    { "source": "/free-ar-audit", "destination": "/free-audit", "permanent": true },
+    { "source": "/servicespage/:id(.*auth.*)", "destination": "/prior-authorization", "permanent": true },
+    { "source": "/servicespage/:id*", "destination": "/services", "permanent": true },
+    { "source": "/specialties/:id*", "destination": "/services", "permanent": true }
+  ],
   "rewrites": [
     { "source": "/(.*)", "destination": "/" }
   ]
